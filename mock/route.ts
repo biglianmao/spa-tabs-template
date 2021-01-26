@@ -17,6 +17,16 @@ export default {
         apiUrl: '/hotel/order',
         description: '酒店订单',
       },
+      {
+        name: 'swrUser',
+        apiUrl: '/swr/user',
+        description: '用户信息',
+      },
+      {
+        name: 'swrTest',
+        apiUrl: '/swr/test',
+        description: '用户信息2',
+      },
     ],
     code: 20000,
     message: '成功',

@@ -2,6 +2,7 @@ import React from 'react';
 import useHotelService, { HotelContext } from './useHotelService';
 
 import HotelInfo from './HotelInfo';
+import type { IRoute} from 'umi';
 import { KeepAlive } from 'umi';
 
 function Hotel() {
@@ -14,8 +15,8 @@ function Hotel() {
   );
 }
 
-export default () => (
-  <KeepAlive name="/hotel/hotel" saveScrollPosition="screen">
+export default ({ route }: { route: IRoute }) => (
+  <KeepAlive name="/hotel/hotel" title={route.title} saveScrollPosition="screen">
     <Hotel />
   </KeepAlive>
 );

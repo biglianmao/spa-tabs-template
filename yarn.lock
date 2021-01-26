@@ -15081,10 +15081,10 @@ rc-virtual-list@^3.0.1, rc-virtual-list@^3.2.0:
     rc-resize-observer "^1.0.0"
     rc-util "^5.0.7"
 
-react-activation@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/react-activation/-/react-activation-0.7.0.tgz#c8047111574eec74d3b1fbe2db96329514bcd361"
-  integrity sha512-zSP80qgK+vD2fSa9/PdT503nPRl5KHeGZhv9eTGTsRDFuTHP4QEmhCYdHjcFDhygJQgNv7mz+NT/0FUk2oQw+A==
+react-activation@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/react-activation/-/react-activation-0.7.1.tgz#c812cdd585dfd86cd6c0d34e9eb84f0653065e48"
+  integrity sha512-HabCyqBSCKJnkw8BIgqsNdrWsIhPCTLn2Iy+6Zv7+g+jCITt3Nx9fxtAj+DcWIV7V9wHF3Ubcp4ckZvWpm+Ouw==
   dependencies:
     create-react-context "^0.3.0"
     hoist-non-react-statics "^3.3.0"
@@ -18139,13 +18139,13 @@ uglify-js@^3.1.4:
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.12.4.tgz#93de48bb76bb3ec0fc36563f871ba46e2ee5c7ee"
   integrity sha512-L5i5jg/SHkEqzN18gQMTWsZk3KelRsfD1wUVNqtq0kzqWQqcJjyL8yc1o8hJgRrWqrAl2mUFbhfznEIoi7zi2A==
 
-umi-plugin-keep-alive@^0.0.1-beta.19:
-  version "0.0.1-beta.19"
-  resolved "https://registry.yarnpkg.com/umi-plugin-keep-alive/-/umi-plugin-keep-alive-0.0.1-beta.19.tgz#f75268565ccebc72ccec812dbb18996dcc743d20"
-  integrity sha512-utQdME8dfdHzY0ATsNSs4JlmJvr7CXNFrlomKw2ihEBOM1Czzv7bFH3GA8AOfaUT/gR144Cp64tPHQo0Dix3sA==
+umi-plugin-keep-alive@^0.0.1-beta.20:
+  version "0.0.1-beta.20"
+  resolved "https://registry.yarnpkg.com/umi-plugin-keep-alive/-/umi-plugin-keep-alive-0.0.1-beta.20.tgz#96bd1e755573b534a626b7540d6482475ab3931f"
+  integrity sha512-InwVRrY5f/NxyPiHB2Ko+HG4UhMMs7P2ni6YYg8XE1+L+CLIk/n/0oR4qOEu8XCJkq7jtk+kXyiZAfDgvKHfjw==
   dependencies:
     "@umijs/renderer-react" "^3.2.9"
-    react-activation "^0.7.0"
+    react-activation "^0.7.1"
     react-router-config "^5.1.1"
 
 umi-plugin-page-creator@^1.6.1:

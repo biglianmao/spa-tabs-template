@@ -3,6 +3,7 @@ import useOrderService from './useOrderService';
 import type { OrderInfo } from './useOrderService';
 import { Spin } from 'antd';
 import { KeepAlive } from 'umi';
+import type { IRoute } from 'umi';
 
 function Order() {
   const orderService = useOrderService();
@@ -38,8 +39,8 @@ function OrderItem(order: OrderInfo) {
   );
 }
 
-export default () => (
-  <KeepAlive name="/hotel/order" saveScrollPosition="screen">
+export default ({ route }: { route: IRoute }) => (
+  <KeepAlive name="/hotel/order" title={route.title} saveScrollPosition="screen">
     <Order />
   </KeepAlive>
 );

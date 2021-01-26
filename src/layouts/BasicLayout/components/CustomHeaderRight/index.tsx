@@ -9,8 +9,19 @@ export default function CustomHeaderRight(/** props: HeaderViewProps */) {
   const { dropdownClick } = useHeaderService();
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <div style={{ marginRight: 10 }}>
+    <div
+      style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginRight: 16 }}
+    >
+      <div
+        style={{
+          marginRight: 10,
+          lineHeight: '44px',
+          background: 'white',
+          margin: 2,
+          paddingLeft: 16,
+          paddingRight: 16,
+        }}
+      >
         <span>欢迎您，</span>
         {isValidating && <Spin />}
         {data && <span>{data.data?.name}</span>}

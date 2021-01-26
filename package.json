@@ -64,7 +64,7 @@
     "react-dom": "^17.0.1",
     "swr": "^0.4.0",
     "umi": "^3.3.4",
-    "umi-plugin-keep-alive": "^0.0.1-beta.19",
+    "umi-plugin-keep-alive": "^0.0.1-beta.20",
     "use-immer": "^0.4.2"
   },
   "devDependencies": {

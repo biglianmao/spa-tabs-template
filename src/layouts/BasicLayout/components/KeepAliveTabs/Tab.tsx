@@ -38,7 +38,7 @@ export default function Tab(props: CachingNode) {
         history.push(props.name!);
       }}
     >
-      {props.name}
+      {props.title}
       {closable && <CloseCircleOutlined className={styles['close-btn']} onClick={dropTab} />}
     </li>
   );

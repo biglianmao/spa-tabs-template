@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'antd';
 import useHomepageService from './useHomepageService';
 import * as Sentry from '@sentry/react';
+import type { IRoute} from 'umi';
 import { KeepAlive } from 'umi';
 
 function Homepage() {
@@ -24,8 +25,8 @@ function Homepage() {
   );
 }
 
-export default () => (
-  <KeepAlive name="/homepage" saveScrollPosition="screen">
+export default ({ route }: { route: IRoute }) => (
+  <KeepAlive name="/homepage" title={route.title} saveScrollPosition="screen">
     <Homepage />
   </KeepAlive>
 );
