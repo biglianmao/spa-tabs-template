@@ -2,8 +2,9 @@ import React from 'react';
 import useOrderService from './useOrderService';
 import type { OrderInfo } from './useOrderService';
 import { Spin } from 'antd';
+import { KeepAlive } from 'umi';
 
-export default function Order() {
+function Order() {
   const orderService = useOrderService();
 
   return (
@@ -36,3 +37,9 @@ function OrderItem(order: OrderInfo) {
     </div>
   );
 }
+
+export default () => (
+  <KeepAlive name="/hotel/order" saveScrollPosition="screen">
+    <Order />
+  </KeepAlive>
+);

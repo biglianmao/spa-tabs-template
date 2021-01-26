@@ -2,8 +2,9 @@ import React from 'react';
 import useHotelService, { HotelContext } from './useHotelService';
 
 import HotelInfo from './HotelInfo';
+import { KeepAlive } from 'umi';
 
-export default function Hotel() {
+function Hotel() {
   const hotelService = useHotelService();
 
   return (
@@ -12,3 +13,9 @@ export default function Hotel() {
     </HotelContext.Provider>
   );
 }
+
+export default () => (
+  <KeepAlive name="/hotel/hotel" saveScrollPosition="screen">
+    <Hotel />
+  </KeepAlive>
+);

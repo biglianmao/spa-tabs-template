@@ -2,8 +2,9 @@ import React from 'react';
 import { Button } from 'antd';
 import useHomepageService from './useHomepageService';
 import * as Sentry from '@sentry/react';
+import { KeepAlive } from 'umi';
 
-export default function Homepage() {
+function Homepage() {
   const homepageService = useHomepageService();
 
   return (
@@ -22,3 +23,9 @@ export default function Homepage() {
     </div>
   );
 }
+
+export default () => (
+  <KeepAlive name="/homepage" saveScrollPosition="screen">
+    <Homepage />
+  </KeepAlive>
+);

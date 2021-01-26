@@ -3,7 +3,7 @@ import ProLayout from '@ant-design/pro-layout';
 import type { IRouteComponentProps } from 'umi';
 import { Link, useModel } from 'umi';
 import Iconfont from '@/components/Iconfont';
-import CustomHeaderRight from './components/CustomHeaderRight';
+import KeepAliveTabs from './components/KeepAliveTabs';
 import Logo from './components/Logo';
 import defaultSettings from './defaultSettings';
 import styles from './index.module.less';
@@ -52,7 +52,8 @@ export default function BasicLayout(props: IRouteComponentProps) {
           </span>
         );
       }}
-      rightContentRender={(/** props: HeaderViewProps */) => <CustomHeaderRight />}
+      // rightContentRender={(/** props: HeaderViewProps */) => <CustomHeaderRight />}
+      headerRender={() => <KeepAliveTabs />}
       onMenuHeaderClick={() => props.history.push('/')}
       menuDataRender={menuDataRender}
       disableMobile
