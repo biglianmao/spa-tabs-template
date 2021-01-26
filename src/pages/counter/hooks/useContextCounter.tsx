@@ -1,6 +1,7 @@
 import React, { useState, useContext, useCallback } from 'react';
+import { createContext } from 'umi';
 
-const CounterContext = React.createContext(1);
+const CounterContext = createContext(1);
 
 export const CounterProvider = ({
   step,

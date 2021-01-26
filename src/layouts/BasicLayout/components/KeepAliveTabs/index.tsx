@@ -13,7 +13,7 @@ export default function KeepAliveTabs() {
       <div>header</div>
       <ul className={styles['alive-tabs']}>
         {cachingNodes.map((node) => (
-          <Tab key={node.id} {...node} />
+          <Tab key={node.name} {...node} />
         ))}
       </ul>
     </div>

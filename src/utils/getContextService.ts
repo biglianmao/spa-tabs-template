@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import { createContext } from 'umi';
 
 /**
  * 泛型约束，对注入数据的类型推断支持
